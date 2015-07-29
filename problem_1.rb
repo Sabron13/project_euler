@@ -8,7 +8,7 @@ def summer(terminus)
     end
 
   end
-  p num_arr.inject(:+)
+  num_arr.inject(:+)
 end
 
 summer(999)
