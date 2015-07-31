@@ -8,7 +8,7 @@ def largest_prime(dividend)
     largest_prime_factor << num if dividend % num == 0 && num.prime?
   end
   
-  p largest_prime_factor[0]
+  largest_prime_factor[0]
 end
 
 largest_prime(600851475143)
