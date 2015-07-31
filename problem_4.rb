@@ -19,8 +19,9 @@ def largest_palindrome_product(i)
       factors_sum = factors.inject(:+) if factors.size == 2
     end
   end
-
+  p factors
 end
+
 
 def palindrome?(num)
   string_num = num.to_s
