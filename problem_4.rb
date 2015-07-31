@@ -35,4 +35,4 @@ def palindrome?(num)
   front == back.reverse ? true : false
 end
 
-largest_palindrome(3)
+largest_palindrome_product(3)
