@@ -6,9 +6,18 @@ def largest_palindrome_product(i)
   (placeholder.to_i * placeholder.to_i).downto(100001).each do |num|
     palindromes << num if palindrome?(num)
   end
-
-  palindromes.each do |num|
-    
+  factors_sum = 0
+  largest_palindrome = []
+  while largest_palindrome.size < 1 do
+    palindromes.each do |num|
+      factors = []
+      while factors.size < 2 do
+        Math.sqrt(num).floor.downto(100).each do |factor|
+        factors << factor if num % factor == 0
+        end
+      end
+      factors_sum = factors.inject(:+) if factors.size == 2
+    end
   end
 
 end
