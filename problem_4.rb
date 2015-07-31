@@ -1,4 +1,4 @@
-def largest_palindrome(i)
+def largest_palindrome_product(i)
   placeholder = ''
   i.times { placeholder += '9' }
   
