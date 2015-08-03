@@ -1,12 +1,12 @@
-def largest_palindrome_product(i)
+def largest_palindrome_product(int)
   placeholder = ''
-  i.times { placeholder += '9' }
+  int.times { placeholder += '9' }
   x = placeholder.to_i
   y = placeholder.to_i
   palindromes = []
 
-  999.downto(100).each do |i|
-    999.downto(100).each do |j|
+  x.downto(0.1 * 10**int).each do |i|
+    y.downto(0.1 * 10**int).each do |j|
       product = i * j
       palindromes << product if palindrome?(product)
     end
