@@ -11,7 +11,7 @@ def largest_palindrome_product(i)
       palindromes << product if palindrome?(product)
     end
   end
-  p palindromes.sort.pop
+  palindromes.sort.pop
   
 end
 
