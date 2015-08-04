@@ -1,7 +1,7 @@
 def smallest_multiple(range)
   num = 2520
   arr = []
-  while arr.size != 20
+  while num < 240000000
     range.each do |i|
       num % i == 0 ? arr << true : num += 1
     end
