@@ -1,5 +1,6 @@
 def smallest_multiple(range)
-  num = 2520
+  num = range.to_a[-1]
+  range_size = range.to_a.size
   arr = []
   while num < 240000000
     range.each do |i|
