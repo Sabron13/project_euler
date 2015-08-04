@@ -6,7 +6,7 @@ def smallest_multiple(range)
       if num % i == 0
         arr << 0
       else
-        arr << i
+        break
       end
     end
     if arr.size == 0
