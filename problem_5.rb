@@ -9,9 +9,14 @@ def smallest_multiple(range)
         arr << i
       end
     end
-    arr = [] if arr.size != 20
+    if arr.size == 0
+      p num
+      break
+    else
+      num += 20
+    end
+    arr.clear
   end
-  p num
 end
 
 
