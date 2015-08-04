@@ -10,11 +10,11 @@ def smallest_multiple(range)
       p num
       break
     else
-      num += 20
+      num += range_size
     end
     arr.clear
   end
 end
 
 
-smallest_multiple(2..20)
+smallest_multiple(1..20)
