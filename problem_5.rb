@@ -6,7 +6,7 @@ def smallest_multiple(range)
     range.each do |i|
       num % i == 0 ? arr << 0 : break
     end
-    if arr.size == 19
+    if arr.size == range_size
       p num
       break
     else
