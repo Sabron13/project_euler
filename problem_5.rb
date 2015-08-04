@@ -9,7 +9,7 @@ def smallest_multiple(range)
         break
       end
     end
-    if arr.size == 0
+    if arr.size == 19
       p num
       break
     else
