@@ -4,7 +4,7 @@ def smallest_multiple(range)
   while num < 240000000
     range.each do |i|
       if num % i == 0
-        next
+        arr << 0
       else
         arr << i
       end
